@@ -8,6 +8,7 @@ packages = [{include = "uber_data_analytics_using_duckdb_dbtcore"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pydantic = "^2.5.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -21,3 +22,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
 format = "ruff format ."
+test = "pytest --verbose"
