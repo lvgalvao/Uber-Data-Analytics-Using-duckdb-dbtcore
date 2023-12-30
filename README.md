@@ -9,5 +9,10 @@ Escopo
 
 Tasks
 
-- Implementar primeiro teste de check de tabelas
-- Fazer ele passar
+[X] Implementar primeiro teste de check de tabelas
+[] Criar import com duckdb - https://duckdb.org/docs/guides/import/s3_import
+[] Criar o teste de data quality com dbt-core
+
+testes/test_check_de_tabelas
+
+[] Fazer ele passar
