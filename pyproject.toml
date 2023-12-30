@@ -8,8 +8,9 @@ packages = [{include = "uber_data_analytics_using_duckdb_dbtcore"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pydantic = "^2.5.3"
 duckdb = "^0.9.2"
+dbt-core = "^1.7.4"
+dbt-duckdb = "^1.7.0"
 
 
 [tool.poetry.group.dev.dependencies]
