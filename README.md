@@ -1,18 +1,26 @@
-# Projeto de Analytics com dados do Uber
+# Uber Data Engineering Project
 
-Escopo
+## Overview
 
-- Realizar a ingestão dos dados no Amazon S3 (DataStack)
-- Realizar as transformações dos dados
-- Salvar os dados no Amazon S3 (DataStack?)
-- Consumir os dados em um dashboard
+![overview](pic/overview.png)
 
-Tasks
+### Tecnologias principais
 
-[X] Implementar primeiro teste de check de tabelas
-[] Criar import com duckdb - https://duckdb.org/docs/guides/import/s3_import
-[] Criar o teste de data quality com dbt-core
+- duckdb
+- dbt-core
+- AWS
 
-testes/test_check_de_tabelas
+## Escopo
 
-[] Fazer ele passar
+- [X] Realizar a ingestão dos dados no Amazon S3 em formato .CSV
+- [ ] Realizar as transformações dos dados
+- [ ] Salvar os dados transformados no Amazon S3
+- [ ] Consumir os dados em um dashboard
+
+## Tasks
+
+- [X] Implementar primeiro teste de check de tabelas
+- [X] Criar import com duckdb: [Literatura](https://duckdb.org/docs/guides/import/s3_import) 
+- [X] Criar um modelo com duckdb
+- [X] Criar um model com dbt-core + duckdb: [Literatura](https://docs.getdbt.com/docs/core/connect-data-platform/duckdb-setup)
+- [ ] Criar um model e salvar essa tabela no s3 com dbt-core + duckdb 
